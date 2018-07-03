@@ -1,0 +1,145 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "杭州",
+        "count": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.59692382812499,
+          29.888280933159265
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "杭州",
+        "count": 4
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.541748046875,
+          29.7453016622136
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "杭州",
+        "count": 6
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.78369140624999,
+          29.036960648558267
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "杭州",
+        "count": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.454345703125,
+          29.23847708592805
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "杭州",
+        "count": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.83886718750001,
+          28.5941685062326
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "杭州",
+        "count": 10
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.77270507812499,
+          28.352733760237818
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "杭州",
+        "count": 8
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.91601562499999,
+          28.555576049185973
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "杭州",
+        "count": 5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.498291015625,
+          27.809927780908378
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "杭州",
+        "count": 7
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.10278320312499,
+          30.12612436422458
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "杭州",
+        "count": 9
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.2568359375,
+          29.209713225868185
+        ]
+      }
+    }
+  ]
+}

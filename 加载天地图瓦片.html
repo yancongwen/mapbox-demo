@@ -17,8 +17,9 @@
 <script>
 mapboxgl.accessToken = 'pk.eyJ1IjoieWFuY29uZ3dlbiIsImEiOiJjaml4eWgxMnowNHY0M3BvMW96cDI1bWJ6In0.QA-bmCCquo-mziBfZ8KOIQ';
 
+var mapContainter = document.getElementById('map');
 var map = new mapboxgl.Map({
-    container: 'map', // container id
+    container: mapContainter, // container id
     style: {
         "version": 8,
         "sources": {

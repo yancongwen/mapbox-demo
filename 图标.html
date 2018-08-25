@@ -24,6 +24,7 @@ var map = new mapboxgl.Map({
 });
 
 map.on('load', function() {
+    
     map.loadImage('https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Cat_silhouette.svg/400px-Cat_silhouette.svg.png', function(error, image) {
         if (error) throw error;
         map.addImage('cat', image);
@@ -32,7 +33,7 @@ map.on('load', function() {
             "type": "symbol",
             "source": {
                 "type": "geojson",
-                "data": "https://www.mapbox.com/mapbox-gl-js/assets/earthquakes.geojson",
+                "data": "mock/demo.geojson",
             },
             "layout": {
                 "icon-image": "cat",

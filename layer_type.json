@@ -1,0 +1,3 @@
+{
+	"layers": [ "background", "fill", "line", "symbol", "raster", "circle", "fill-extrusion", "heatmap", "hillshade"]
+}

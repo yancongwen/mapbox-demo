@@ -20,4 +20,4 @@
 - [3DBuildings](https://yancongwen.cn/mapbox-demo/3DBuildings.html)
 - [山体阴影渲染](https://yancongwen.cn/mapbox-demo/山体阴影渲染.html)
 - [声音模拟建筑高度](https://yancongwen.cn/mapbox-demo/声音模拟建筑高度.html)
-- [三维地籍](三维地籍/index.html)
+- [三维地籍](https://yancongwen.cn/mapbox-demo/三维地籍/index.html)

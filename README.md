@@ -21,7 +21,7 @@
 - [山体阴影渲染](https://yancongwen.cn/mapbox-demo/山体阴影渲染.html)
 - [山体阴影动态设色](https://yancongwen.cn/mapbox-demo/terrain/index.html)
 - [声音模拟建筑高度](https://yancongwen.cn/mapbox-demo/声音模拟建筑高度.html)
-- [三维地籍](https://yancongwen.cn/mapbox-demo/3DCadastre/index.html)
+- [三维地籍（矢量瓦片数据暂不可访问）](https://yancongwen.cn/mapbox-demo/3DCadastre/index.html)
 - [基于Turf.js的动态路线展示](https://yancongwen.cn/mapbox-demo/track/index.html)
 - [基于Deck.gl的出租车动态路线展示](https://yancongwen.cn/mapbox-demo/trips/index.html)
 

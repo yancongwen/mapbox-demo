@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>地形地貌</title>
+  <script src="./lib/mapbox-gl-dev.js"></script>
+  <link rel="stylesheet" href="./lib/mapbox-gl.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./lib/iview.css">
+  <script src="./lib/vue.min.js"></script>
+  <script src="./lib/iview.min.js"></script>
+</head>
+<body>
+  <div id="app">
+    <div id="map"></div>
+    <div id="query-panel">
+      <i-form :model="options" :label-width="80">
+        <form-item label="光照角度：">
+          <input-number :max="359" :min="0" :step="10" @on-change="optionChange('hillshade-illumination-direction', $event)" :value="options['hillshade-illumination-direction']"></input-number>
+        </form-item>
+        <form-item label="山影亮度：">
+          <input-number :max="1" :min="0" :step="0.1" @on-change="optionChange('hillshade-exaggeration', $event)" :value="options['hillshade-exaggeration']"></input-number>
+        </form-item>
+        <form-item label="阴影颜色：">
+          <color-picker :value="options['hillshade-shadow-color']" @on-active-change="optionChange('hillshade-shadow-color', $event)" recommend />
+        </form-item>
+        <form-item label="高亮颜色：">
+          <color-picker :value="options['hillshade-highlight-color']" @on-active-change="optionChange('hillshade-highlight-color', $event)" recommend />
+        </form-item>
+        <form-item label="突出颜色：">
+          <color-picker :value="options['hillshade-accent-color']" @on-active-change="optionChange('hillshade-accent-color', $event)" recommend />
+        </form-item>
+      </i-form>
+    </div>
+  </div>
+  <script src="vars.js"></script>
+  <script src="bundle.js"></script>
+</body>
+</html>

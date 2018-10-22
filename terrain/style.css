@@ -1,0 +1,26 @@
+html, body {
+  margin: 0;
+}
+
+#map {
+  width: 100vw;
+  height: 100vh;
+}
+
+.mapboxgl-ctrl a.mapboxgl-ctrl-logo{
+  display: none;
+}
+
+#query-panel{
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+#query-panel .ivu-form-item{
+  margin-bottom: 8px;
+}

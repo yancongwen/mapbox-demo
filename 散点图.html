@@ -1,65 +1,70 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset='utf-8' />
-    <title>散点图</title>
-    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.js'></script>
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.css' rel='stylesheet' />
-    <style>
-        body { margin:0; padding:0; }
-        #map { position:absolute; top:0; bottom:0; width:100%; }
-    </style>
+  <meta charset='utf-8' />
+  <title>散点图</title>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.css' rel='stylesheet' />
+  <style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  #map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  </style>
 </head>
+
 <body>
+  <div id='map'></div>
+  <script>
+  mapboxgl.accessToken = 'pk.eyJ1IjoieWFuY29uZ3dlbiIsImEiOiJjaml4eWgxMnowNHY0M3BvMW96cDI1bWJ6In0.QA-bmCCquo-mziBfZ8KOIQ';
 
-
-<div id='map'></div>
-
-<script>
-mapboxgl.accessToken = 'pk.eyJ1IjoieWFuY29uZ3dlbiIsImEiOiJjaml4eWgxMnowNHY0M3BvMW96cDI1bWJ6In0.QA-bmCCquo-mziBfZ8KOIQ';
-
-var map = new mapboxgl.Map({
+  var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/dark-v9',
     center: [118, 30],
     zoom: 6
-});
+  });
 
-map.on('load', function() {
+  map.on('load', function() {
     map.addSource("earthquakes", {
-        type: "geojson",
-        data: "./mock/point_zj.json"
+      type: "geojson",
+      data: "./mock/point_zj.json"
     });
 
     map.addLayer({
-        id: "clusters",
-        type: "circle",
-        source: "earthquakes",
-        paint: {
-            // Use step expressions (https://www.mapbox.com/mapbox-gl-js/style-spec/#expressions-step)
-            // with three steps to implement three types of circles:
-            //   * Blue, 20px circles when point count is less than 100
-            //   * Yellow, 30px circles when point count is between 100 and 750
-            //   * Pink, 40px circles when point count is greater than or equal to 750
-            "circle-color": [
-                "step",
-                ["get", "count"],
-                "#51bbd6", 2,
-                "#f1f075", 8,
-                "#f28cb1"
-            ],
-            "circle-radius": [
-                "step",
-                ["get", "count"],
-                20, 2,
-                30, 8,
-                40,
-            ]
-        }
+      id: "clusters",
+      type: "circle",
+      source: "earthquakes",
+      paint: {
+        // Use step expressions (https://www.mapbox.com/mapbox-gl-js/style-spec/#expressions-step)
+        // with three steps to implement three types of circles:
+        //   * Blue, 20px circles when point count is less than 100
+        //   * Yellow, 30px circles when point count is between 100 and 750
+        //   * Pink, 40px circles when point count is greater than or equal to 750
+        "circle-color": [
+          "step", ["get", "count"],
+          "#51bbd6", 2,
+          "#f1f075", 8,
+          "#f28cb1"
+        ],
+        "circle-radius": [
+          "step", ["get", "count"],
+          20, 2,
+          30, 8,
+          40,
+        ]
+      }
     });
-});
-</script>
-
+  });
+  </script>
 </body>
+
 </html>

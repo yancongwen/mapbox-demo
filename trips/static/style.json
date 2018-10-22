@@ -1,0 +1,19 @@
+{
+  "version": 8,
+  "bearing": 0,
+  "pitch": 0,
+  "sources": {
+    "composite": {
+      "tiles": ["http://map.geoq.cn/ArcGIS/rest/services/ChinaOnlineStreetPurplishBlue/MapServer/tile/{z}/{y}/{x}"],
+      "type": "raster",
+      "tileSize": 256
+    }
+  },
+  "layers": [{
+    "id": "底图",
+    "type": "raster",
+    "source": "composite",
+    "layout": {},
+    "paint": {}
+  }]
+}

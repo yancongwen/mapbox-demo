@@ -6,17 +6,17 @@ var style = {
   "sources": {
     "img_c": {
       "type": "raster",
-      "tiles": ["http://t0.tianditu.com/vec_c/wmts?service=wmts&request=gettile&version=1.0.0&layer=vec&style=default&TileMatrixSet=c&TileMatrix={z}&TileCol={x}&tileRow={y}"],
+      "tiles": ["https://t0.tianditu.com/vec_c/wmts?service=wmts&request=gettile&version=1.0.0&layer=vec&style=default&TileMatrixSet=c&TileMatrix={z}&TileCol={x}&tileRow={y}"],
       "tileSize": 256
     },
     "label_c": {
       "type": "raster",
-      "tiles": ["http://t0.tianditu.com/cva_c/wmts?service=wmts&request=gettile&version=1.0.0&layer=cva&style=default&TileMatrixSet=c&TileMatrix={z}&TileCol={x}&tileRow={y}"],
+      "tiles": ["https://t0.tianditu.com/cva_c/wmts?service=wmts&request=gettile&version=1.0.0&layer=cva&style=default&TileMatrixSet=c&TileMatrix={z}&TileCol={x}&tileRow={y}"],
       "tileSize": 256
     },
     "building": {
       "type": "vector",
-      "url": "http://127.0.0.1:3000/api/v1/tilesets/DIJI-XTZ/tilejson"
+      "url": "https://127.0.0.1:3000/api/v1/tilesets/DIJI-XTZ/tilejson"
     }
   },
   "layers": [{

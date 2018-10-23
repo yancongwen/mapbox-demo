@@ -4,12 +4,12 @@
   "pitch": 0,
   "sources": {
     "composite": {
-      "tiles": ["http://t0.tianditu.com/img_w/wmts?service=wmts&request=gettile&version=1.0.0&layer=img&style=default&TileMatrixSet=w&TileMatrix={z}&TileCol={x}&tileRow={y}"],
+      "tiles": ["https://t0.tianditu.com/img_w/wmts?service=wmts&request=gettile&version=1.0.0&layer=img&style=default&TileMatrixSet=w&TileMatrix={z}&TileCol={x}&tileRow={y}"],
       "type": "raster",
       "tileSize": 256
     },
     "label": {
-      "tiles": ["http://t0.tianditu.com/cva_w/wmts?service=wmts&request=GetTile&version=1.0.0&Layer=cva&Style=default&TileMatrixSet=w&TileMatrix={z}&TileCol={x}&TileRow={y}"],
+      "tiles": ["https://t0.tianditu.com/cva_w/wmts?service=wmts&request=GetTile&version=1.0.0&Layer=cva&Style=default&TileMatrixSet=w&TileMatrix={z}&TileCol={x}&TileRow={y}"],
       "type": "raster",
       "tileSize": 256
     }

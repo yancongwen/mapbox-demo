@@ -3,7 +3,7 @@ var style = {
   "sources": {
     "img_w": {
       "type": "raster",
-      "tiles": ["http://map.geoq.cn/ArcGIS/rest/services/ChinaOnlineCommunity/MapServer/tile/{z}/{y}/{x}"],
+      "tiles": ["https://map.geoq.cn/ArcGIS/rest/services/ChinaOnlineCommunity/MapServer/tile/{z}/{y}/{x}"],
       "tileSize": 256
     },
     "mapbox-terrain-rgb": {

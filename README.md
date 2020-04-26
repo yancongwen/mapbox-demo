@@ -1,5 +1,5 @@
 # mapbox-demo
-> Mapbox-gl-js 地图实例     
+> Mapbox-gl-js 地图示例     
 
 ## 实例：
 - [HelloWorld](https://yancongwen.cn/mapbox-demo/HelloWorld.html)
